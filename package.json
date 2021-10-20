@@ -1,0 +1,29 @@
+{
+    "name": "refnow",
+    "displayName": "Refer Now",
+    "description": "Provide often used doc or code references.",
+    "version": "0.0.1",
+    "icon": "images/refnow.png",
+    "publisher":"FrankLiang",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/liangxiao1/refnow.git"
+    },
+    "bugs": {
+		"url": "https://github.com/liangxiao1/refnow/issues"
+	},
+    "engines": {
+        "vscode": "^1.2.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
