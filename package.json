@@ -2,7 +2,7 @@
     "name": "refnow",
     "displayName": "Refer Now",
     "description": "Provide often used doc or code references.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icon": "images/refnow.png",
     "publisher":"FrankLiang",
     "repository": {
