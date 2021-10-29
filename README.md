@@ -49,6 +49,7 @@ The list keeps updating.
 |rf_py_concurrent.futures | Python run in parallel snippset|
 |rf_py_logging | Python logging snippset|
 |rf_py_signal | Python signal handler snippset|
+|rf_py_timeout | Python timeout snippset|
 |rf_py_yaml | Python yaml snippset|
 
 ## Contribution
