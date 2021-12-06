@@ -32,8 +32,8 @@
             "    <component name>",
             "bugzilla_id:",
             "    <optional: N/A or bug tested>",
-			"customer_case_id:",
-            "    <optional: N/A or customer case id tested>",
+			"is_customer_case:",
+            "    <optional: True or False>",
             "testplan:",
 			"    <optional: N/A or testplan location>",
 			"maintainer:",
@@ -83,12 +83,40 @@
 		],
 		"description": "Python run in parallel snippset"
 	},
+	"Python CSV File Read": {
+		"scope": "python",
+		"prefix": "rf_py_csv_read",
+		"body": [
+			"import csv",
+			"with open('demo.csv') as fh:",
+            "        csv_data = csv.DictReader(fh)",
+			"        for row in csv_data:",
+			"            print('{}{}'.format(row['head1'],row['head2']))",
+		],
+		"description": "Python csv file dic read"
+	},
+	"Python CSV File Write": {
+		"scope": "python",
+		"prefix": "rf_py_csv_write",
+		"body": [
+			"import csv",
+			"headers = ['head1','head2','head3']",
+			"rows = [{'head1':'test1','head2':'test2','head3':'test3'},",
+			"        {'head1':'test4','head2':'test5','head3':'test6'},",
+			"        {'head1':'test7','head2':'test8','head3':'test9'}]",
+			"with open('demo.csv', 'w+') as fh:",
+			"    csv_data = csv.DictWriter(fh, headers)",
+			"    csv_data.writeheader()",
+			"    csv_data.writerows(rows)",
+		],
+		"description": "Python csv file dic write"
+	},
 	"Python Logging Quick Start": {
 		"scope": "python",
 		"prefix": "rf_py_logging",
 		"body": [
 			"import logging",
-			"LOG_FORMAT = '%(levelname)s:%(message)s'",
+			"LOG_FORMAT = '%(asctime)s:%(levelname)s:%(message)s'",
 			"LOG = logging.getLogger(__name__)",
 			"logging.basicConfig(level=logging.DEBUG, format=LOG_FORMAT)",
 			"LOG.info('Ready to work now!')",

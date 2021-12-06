@@ -47,6 +47,8 @@ The list keeps updating.
 |rf_doc_case_docstring | Doc template for test case.|
 |rf_py_argparse | Python argparse snippset|
 |rf_py_concurrent.futures | Python run in parallel snippset|
+|rf_py_csv_read | Python csv file dic read snippset|
+|rf_py_csv_write | Python csv file dic write snippset|
 |rf_py_logging | Python logging snippset|
 |rf_py_signal | Python signal handler snippset|
 |rf_py_timeout | Python timeout snippset|

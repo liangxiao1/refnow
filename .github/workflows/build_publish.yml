@@ -12,7 +12,7 @@ jobs:
       with:
         node-version: 12
     - run: |
-        npm install -g vsce
+        npm install -g vsce@1.100.1
         vsce package
     - name: Publish to vs marketplace
       if: startsWith(github.ref, 'refs/tags')
