@@ -89,9 +89,9 @@
 		"body": [
 			"import csv",
 			"with open('demo.csv') as fh:",
-            "        csv_data = csv.DictReader(fh)",
-			"        for row in csv_data:",
-			"            print('{}{}'.format(row['head1'],row['head2']))",
+            "    csv_data = csv.DictReader(fh)",
+			"    for row in csv_data:",
+			"        print('{}{}'.format(row['head1'],row['head2']))",
 		],
 		"description": "Python csv file dic read"
 	},
