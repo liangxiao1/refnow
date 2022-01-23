@@ -1,5 +1,5 @@
 {
-	"TestCase Best Practise Checklist": {
+	"TestCase Best Practice Checklist": {
 		"prefix": "rf_doc_case_checklist",
 		"body": [
             "$BLOCK_COMMENT_START",
@@ -17,19 +17,21 @@
 			"- try it before you submit your changes",
             "$BLOCK_COMMENT_END"
 		],
-		"description": "TestCase best practise checklist, think more in new case design."
+		"description": "TestCase best practice checklist, think more in new case design."
 	},
     "TestCase Doc Template": {
 		//"scope": "python,c",
 		"prefix": "rf_doc_case_docstring",
 		"body": [
-            "$BLOCK_COMMENT_START",
+			"$BLOCK_COMMENT_START",
+			"case_tag:",
+            "    <testcase tag. eg. tagA,tagB>",
 			"case_name:",
             "    <testcase name>",
             "case_file:",
 			"    <testcase file location>",
 			"component:",
-            "    <component name>",
+            "    <which component this case tests>",
             "bugzilla_id:",
             "    <optional: N/A or bug tested>",
 			"is_customer_case:",
@@ -60,8 +62,9 @@
 			"parser.add_argument('-f', dest='file', default=None, action='store',help='specify file location', required=False)",
 			"args = parser.parse_args()",
 			"print('access args demo {}.format(args.file)')",
+			"# https://docs.python.org/3.8/library/argparse.html"
 		],
-		"description": "Python argparse snippset"
+		"description": "Python argparse snippet"
 	},
 	"Python Run in Parallel": {
 		"scope": "python",
@@ -81,7 +84,7 @@
 			"        else:",
 			"            pass",
 		],
-		"description": "Python run in parallel snippset"
+		"description": "Python run in parallel snippet"
 	},
 	"Python CSV File Read": {
 		"scope": "python",
@@ -108,6 +111,7 @@
 			"    csv_data = csv.DictWriter(fh, headers)",
 			"    csv_data.writeheader()",
 			"    csv_data.writerows(rows)",
+			"# https://docs.python.org/3.8/library/csv.html"
 		],
 		"description": "Python csv file dic write"
 	},
@@ -120,9 +124,10 @@
 			"LOG = logging.getLogger(__name__)",
 			"logging.basicConfig(level=logging.DEBUG, format=LOG_FORMAT)",
 			"LOG.info('Ready to work now!')",
-			"LOG.debug('Here is debug infomation')"
+			"LOG.debug('Here is debug information')",
+			"# https://docs.python.org/3.8/library/logging.html"
 		],
-		"description": "Python logging snippset"
+		"description": "Python logging snippet"
 	},
 	"Python Signal Quick Start": {
 		"scope": "python",
@@ -137,8 +142,9 @@
 			"signal.signal(signal.SIGINT, sig_handler)",
 			"signal.signal(signal.SIGQUIT, sig_handler)",
 			"signal.signal(signal.SIGTERM, sig_handler)",
+			"# https://docs.python.org/3.8/library/signal.html"
 		],
-		"description": "Python signal handler snippset"
+		"description": "Python signal handler snippet"
 	},
 	"Python Timeout Control": {
 		"scope": "python",
@@ -157,20 +163,25 @@
 			"   print('retry after {}s'.format(interval))",
 			"   time.sleep(interval)",
 		],
-		"description": "Python timeout snippset"
+		"description": "Python timeout snippet"
 	},
 	"Python Yaml Quick Start": {
 		"scope": "python",
 		"prefix": "rf_py_yaml",
 		"body": [
 			"try:",
+			"    from yaml import load, dump",
 		    "    from yaml import CLoader as Loader, CDumper as Dumper",
 		    "except ImportError:",
 			"    from yaml import Loader, Dumper",
 			"with open(cfg_file,'r') as fh:",
             "    keys_data = load(fh, Loader=Loader)",
-            "print(keys_data['xxxx'])",
+			"print(keys_data['xxxx'])",
+			"data=load(p.__doc__,Loader=Loader)",
+			"dump(data,fh) # dump to file",
+			"print(dump(data)) # print to stdout",
+			"# https://pyyaml.org/wiki/PyYAMLDocumentation"
 		],
-		"description": "Python yaml snippset"
+		"description": "Python yaml snippet"
 	},
 }

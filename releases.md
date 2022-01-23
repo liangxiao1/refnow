@@ -1,5 +1,12 @@
 # refnow release notes  
 
+## 0.0.4- 20220123
+
+- added case_tag to rf_doc_case_docstring
+- update rf_py_yaml with load and dump
+- append modules user guide link for more information
+- fixed typos
+
 ## 0.0.3- 20211206
 
 - added rf_py_csv_read

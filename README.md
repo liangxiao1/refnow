@@ -1,6 +1,6 @@
 # refnow README
 
-refnow provides often used snippsets, eg. doc templates, code quick start.
+refnow provides often used snippets, eg. doc templates, code quick start.
 
 ## Installation
 
@@ -13,6 +13,7 @@ Install from marketplace directly by searching 'refnow' or click [here](https://
 ```
 
 ### Install from source code
+
 Copy code [repo](https://github.com/liangxiao1/refnow) into `~/.vscode/extensions` directly and restart VS Code.
 
 ### Build .vsix from source code and install it
@@ -43,18 +44,18 @@ The list keeps updating.
 
 |Prefix | Description|
 |-------|-------|
-|rf_doc_case_checklist | TestCase best practise checklist, think more in new case design.
-|rf_doc_case_docstring | Doc template for test case.|
-|rf_py_argparse | Python argparse snippset|
-|rf_py_concurrent.futures | Python run in parallel snippset|
-|rf_py_csv_read | Python csv file dic read snippset|
-|rf_py_csv_write | Python csv file dic write snippset|
-|rf_py_logging | Python logging snippset|
-|rf_py_signal | Python signal handler snippset|
-|rf_py_timeout | Python timeout snippset|
-|rf_py_yaml | Python yaml snippset|
+|rf_doc_case_checklist | TestCase best practice checklist, think more in new case design.
+|rf_doc_case_docstring | Doc template for test case in yaml format.|
+|rf_py_argparse | Python argparse snippet|
+|rf_py_concurrent.futures | Python run in parallel snippet|
+|rf_py_csv_read | Python csv file dic read snippet|
+|rf_py_csv_write | Python csv file dic write snippet|
+|rf_py_logging | Python logging snippet|
+|rf_py_signal | Python signal handler snippet|
+|rf_py_timeout | Python timeout snippet|
+|rf_py_yaml | Python yaml snippet|
 
 ## Contribution
 
-You are welcomed to share your expertise by creating pull request or raise issue.  
+You are welcomed to share your expertise by creating pull request or raise issues.  
 Source on [github](https://github.com/liangxiao1/refnow).
