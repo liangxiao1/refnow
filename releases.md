@@ -1,5 +1,9 @@
 # refnow release notes  
 
+## 0.1.0- 20220914
+
+- synced rf_doc_case_docstring with the latest requirement
+
 ## 0.0.4- 20220123
 
 - added case_tag to rf_doc_case_docstring
