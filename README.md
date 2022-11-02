@@ -45,7 +45,8 @@ The list keeps updating.
 |Prefix | Description|
 |-------|-------|
 |rf_doc_case_checklist | TestCase best practice checklist, think more in new case design.
-|rf_doc_case_docstring | Doc template for test case in yaml format.|
+|rf_doc_case_docstring_yaml | Doc template for test case in yaml format.|
+|rf_doc_case_docstring_csv | Doc template for test case in yaml format.|
 |rf_py_argparse | Python argparse snippet|
 |rf_py_concurrent.futures | Python run in parallel snippet|
 |rf_py_csv_read | Python csv file dic read snippet|
