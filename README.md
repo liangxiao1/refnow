@@ -51,12 +51,12 @@ The list keeps updating.
 |rf_py_concurrent.futures | Python run in parallel snippet|
 |rf_py_csv_read | Python csv file dic read snippet|
 |rf_py_csv_write | Python csv file dic write snippet|
+|rf_py_filelock | Python filelock snippet|
 |rf_py_logging | Python logging snippet|
 |rf_py_signal | Python signal handler snippet|
 |rf_py_timeout | Python timeout snippet|
 |rf_py_yaml | Python yaml snippet|
 
 ## Contribution
-
-You are welcomed to share your expertise by creating pull request or raise issues.  
+You are welcome to share your expertise by creating pull requests or raise issues.  
 Source on [github](https://github.com/liangxiao1/refnow).

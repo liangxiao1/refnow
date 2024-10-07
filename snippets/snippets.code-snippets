@@ -52,7 +52,9 @@
             "    <N/A, jira_XXXX or bugzilla_XXXX, better to not paste full url here - Evidence Traceability>",
 			"is_customer_case:",
             "    <True or False - Evidence Traceability>",
-            "testplan:",
+            "attached_customer_cases:",
+            "    <0 or N - how many customer cases attached to the bug, default is 0>",
+			"testplan:",
 			"    <optional: N/A or testplan location>",
 			"test_type:",
 			"    <default is functional from ['functional', 'nonfunctional', 'structural']- Evidence Traceability>",
@@ -145,6 +147,19 @@
 		],
 		"description": "Python csv file dic write"
 	},
+	"Python File Lock": {
+		"scope": "python",
+		"prefix": "rf_py_filelock",
+		"body": [
+			"from filelock import FileLock",
+			"with FileLock(boottime_csv + '.lock'):",
+			"    with open(boottime_csv, 'a+') as fh:",
+		    "        csv_data = csv.DictWriter(fh, csv_headers)",
+		    "        csv_data.writerow(test_instance.tmp_data.get('BootTime'))",
+			"# https://py-filelock.readthedocs.io/en/latest/index.html"
+		],
+		"description": "Python filelock snippet"
+	},
 	"Python Logging Quick Start": {
 		"scope": "python",
 		"prefix": "rf_py_logging",
@@ -213,5 +228,5 @@
 			"# https://pyyaml.org/wiki/PyYAMLDocumentation"
 		],
 		"description": "Python yaml snippet"
-	},
+	}
 }
